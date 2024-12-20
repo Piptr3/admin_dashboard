@@ -7,11 +7,16 @@
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 4fr;
+    height: 100vw;
 }
 
 .sidebar {
-    background-color: lightblue;
+    background-color: rgb(25, 146, 212);
     grid-row: 1 / 3;
+    color: white;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr 20fr;
+    gap: 40px;
 }
 
 .header {
@@ -20,4 +25,21 @@
 
 .main-content {
     background-color: green;
+}
+
+.title {
+    font-size: 24px;
+    margin: 20px;
+}
+
+.sidebar ul {
+    display: grid;
+    padding-left: 10%;
+    gap: 10px;
+}
+
+.sidebar ul,
+.sidebar li {
+    list-style-type: none;
+    height: 10%px;
 }
