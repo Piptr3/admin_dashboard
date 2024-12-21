@@ -8,6 +8,7 @@
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 4fr;
     height: 100vw;
+    background-color: lightgray;
 }
 
 .sidebar {
@@ -20,11 +21,11 @@
 }
 
 .header {
-    background-color: red;
+    background-color: white;
 }
 
 .main-content {
-    background-color: green;
+    background-color: lightgray;
 }
 
 .title {
@@ -42,4 +43,54 @@
 .sidebar li {
     list-style-type: none;
     height: 10%px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.searchbar {
+    background-color: lightgray;
+    height: 25px;
+    margin: 20px;
+    border: none;
+    border-radius: 15px;
+}
+
+.header ul {
+    list-style-type: none;
+}
+
+.header .name {
+    display: grid;
+    justify-self: end;
+    margin: 20px min(80px, 15%);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.header .title .small {
+    font-size: 1rem;
+}
+
+.header .title .big {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.header .list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.header .list li {
+    align-self: center;
+    background-color: rgb(25, 146, 212);
+    justify-self: center;
+    padding: 8% 16%;
+    border-radius: 15px;    
+    color: white;
+    font-weight: bold;
 }
